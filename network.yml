@@ -1,5 +1,6 @@
 Description: >
     This Template deploys a VPC across two AZs
+
 Parameters:
     EnvironmentName:
         Description: An Environment name that will be prefixed to resources
@@ -29,6 +30,7 @@ Parameters:
         Description: Please enter the IP range (CIDR notation) for this
         Type: String
         Default: 10.0.3.0/24
+
 Resources:
     VPC:
         Type: AWS::EC2::VPC
